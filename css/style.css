@@ -1,0 +1,60 @@
+:root{
+    --gray: #b4b4b4;
+}
+
+/* Reset CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.clear{
+    clear:both;
+}
+
+.container{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Header */
+
+header{
+    padding: 20px 2%;
+}
+
+.logo a img{
+    float: left;
+    width: 226px;
+}
+
+header nav{
+    float: right;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    padding: 0 20px;
+    float: left;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+header ul a{
+    font-weight: 500;
+    color: var(--gray);
+    text-decoration: none;
+}
+
+/* ** */
