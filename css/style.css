@@ -1,25 +1,32 @@
-:root{
+:root {
+    --white: #f5f5f5;
     --gray: #b4b4b4;
+    --dark-gray: #576975;
+    --dark-gray-2: #688293;
+
+    --h2: 24px;
+    --p: 16px;
 }
 
 /* Reset CSS */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body{
+html,
+body {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
 }
 
-.clear{
-    clear:both;
+.clear {
+    clear: both;
 }
 
-.container{
+.container {
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
@@ -27,34 +34,169 @@ html, body{
 
 /* Header */
 
-header{
+header {
     padding: 20px 2%;
 }
 
-.logo a img{
+.logo a img {
     float: left;
     width: 226px;
 }
 
-header nav{
+header nav {
     float: right;
 }
 
-header nav ul{
+header nav ul {
     list-style: none;
 }
 
-header nav ul li{
+header nav ul li {
     padding: 0 20px;
     float: left;
     font-size: 1.2rem;
     text-transform: uppercase;
 }
 
-header ul a{
+header ul a {
     font-weight: 500;
     color: var(--gray);
     text-decoration: none;
 }
 
 /* ** */
+
+/* Mosaico */
+
+.mosaico-single {
+    float: left;
+    width: calc(100% / 6);
+}
+
+.img-mosaico-single {
+    width: 100%;
+    padding-top: 100%;
+    background-color: var(--gray);
+    border: 5px solid var(--white);
+}
+
+.img-1 {
+    background-image: url(../img/mosaico/dentista-1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.img-2 {
+    background-image: url(../img/mosaico/dentista-2.jpg);
+    background-size: 100% 100%;
+}
+
+.img-3 {
+    background-image: url(../img/mosaico/dentista-3.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.img-4 {
+    background-image: url(../img/mosaico/dentista-4.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.img-5 {
+    background-image: url(../img/mosaico/dentista-5.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.img-6 {
+    background-image: url(../img/mosaico/dentista-6.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.img-7 {
+    background-image: url(../img/mosaico/dentista-7.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.img-8 {
+    background-image: url(../img/mosaico/dentista-8.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.img-9 {
+    background-image: url(../img/mosaico/dentista-9.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.img-10 {
+    background-image: url(../img/mosaico/dentista-10.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.img-11 {
+    background-image: url(../img/mosaico/dentista-11.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.img-12 {
+    background-image: url(../img/mosaico/dentista-12.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/**/
+
+/* Seção Serviços */
+
+section.servicos > .container{
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: -60px;
+    color: var(--white);
+}
+
+section.servicos > .container .box-servicos{
+    background-image: url(../img/icone_dente.png);
+    background-size: 18px 18px;
+    background-position: center calc(100% - 5px);
+    background-repeat: no-repeat;
+}
+
+section.servicos > .container .box-servicos h2{
+    font-weight: normal;
+    font-size: var(--h2);
+    text-transform: uppercase;
+}
+
+section.servicos > .container .box-servicos p{
+    font-weight: normal;
+    font-size: var(--p);
+    margin-top: 8px;    
+}
+
+section.servicos > .container .box-servicos:nth-of-type(1){
+    width: 30%;
+    padding: 30px 2%;
+    background-color: var(--dark-gray);
+}
+section.servicos > .container .box-servicos:nth-of-type(2){
+    width: 40%;
+    padding: 80px 2%;
+    background-color: var(--dark-gray-2);
+    background-image: none;
+}
+section.servicos > .container .box-servicos:nth-of-type(3){
+    width: 30%;
+    padding: 30px 2%;
+    background-color: var(--dark-gray);
+}
