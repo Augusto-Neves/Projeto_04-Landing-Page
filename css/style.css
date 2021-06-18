@@ -4,7 +4,7 @@
     --gray-darker: #4b4b4b;
     --dark-gray: #576975;
     --dark-gray-2: #688293;
-
+    --brown: #737373;
     --h2: 24px;
     --p: 16px;
 }
@@ -59,9 +59,29 @@ header nav.menu-desktop ul li {
     text-transform: uppercase;
 }
 
-nav.menu-mobile{
+nav.menu-mobile {
     display: none;
     float: right;
+    width: 28px;
+    height: 28px;
+    background-image: url(../img/menu-mobile.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+nav.menu-mobile ul {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    text-align: center;
+    background-color: var(--white);
+    z-index: 999;
+}
+
+nav.menu-mobile ul li{
+    padding: 10px 0;
+    text-transform: uppercase;
 }
 
 header ul a {
@@ -192,7 +212,7 @@ section.servicos>.container .box-servicos p {
 
 section.servicos>.container .box-servicos:nth-of-type(1) {
     width: 30%;
-    padding: 30px 2%;
+    padding: 40px 2%;
     background-color: var(--dark-gray);
 }
 
@@ -205,7 +225,7 @@ section.servicos>.container .box-servicos:nth-of-type(2) {
 
 section.servicos>.container .box-servicos:nth-of-type(3) {
     width: 30%;
-    padding: 30px 2%;
+    padding: 40px 2%;
     background-color: var(--dark-gray);
 }
 
@@ -259,15 +279,71 @@ section.perfil-container .texto-perfil p {
 
 /****/
 
+/* Seção de Vídeos*/
+
+section.videos{
+    padding: 50px 0;
+}
+
+section.videos .box-video{
+    position: relative;
+    float: left;
+    width: 33.3%;
+    border: 5px solid white;
+    padding-top: calc(33.3% * 0.6);   
+}
+
+section.videos iframe{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/****/
+
+/* Seção Tratamentos */
+section.tratamentos > h2{
+    text-align: center;
+    color: var(--dark-gray-2);
+    font-size: var(--h2);
+    padding: 70px 0;
+}
+
+section.tratamentos .tratamento-container{
+    float: left;
+    width: 33.3%;    
+} 
+
+.tratamento-single{
+    padding: 20px;
+}
+
+.tratamento-single h2{
+    font-size: var(--h2);
+    color: var(--brown);
+    font-weight: normal;
+}
+
+.tratamento-single p{
+    padding: 15px 0;
+    font-size: var(--p);
+    color: var(--gray);
+}
+
+/****/
+
 /* Media Queries */
 
 @media screen and (max-width: 768px) {
 
-    nav.menu-desktop{
+    nav.menu-desktop {
         display: none;
     }
-    nav.menu-mobile{
-        display: block;
+
+    nav.menu-mobile {
+        display: block;        
     }
 
 
@@ -294,9 +370,15 @@ section.perfil-container .texto-perfil p {
         padding: 30px 2%;
     }
 
+    section.perfil-container .perfil-wraper{
+        padding-top: 0;
+    }
+
     section.perfil-container .perfil-wraper2 {
-       display: inline-block;
-       text-align: center;
+        height: auto;
+        position: static;
+        display: inline-block;
+        text-align: center;
     }
 
     section.perfil-container .img-perfil {
@@ -304,30 +386,46 @@ section.perfil-container .texto-perfil p {
         width: 50%;
         height: auto;
         padding-top: 70%;
-        
+
     }
-    
+
     section.perfil-container .texto-perfil {
         display: inline-block;
         width: 100%;
-            
+
     }
 
-    section.perfil-container .texto-perfil p{
+    section.perfil-container .texto-perfil p {
         text-align: justify;
-    } 
-    
+    }
+
+    section.videos{
+        text-align: center;
+    }
+
+    section.videos .box-video{
+        display: inline-block;
+        float: none;
+        width: 70%;
+        padding: calc(70% * 0.6);
+    }    
+
 }
 
-@media screen and (max-width: 580px){
-    section.perfil-container .img-perfil{
+@media screen and (max-width: 580px) {
+    section.perfil-container .img-perfil {
         width: 80%;
         padding-top: 110%;
     }
+
+    section.videos .box-video{       
+        width: 100%;
+        padding: calc(100% * 0.3);
+    } 
 }
 
-@media sreen and (max-width: 480px){
-    .logo a img {        
+@media sreen and (max-width: 480px) {
+    .logo a img {
         width: 200px;
     }
 }
