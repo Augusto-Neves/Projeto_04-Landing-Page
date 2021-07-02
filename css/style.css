@@ -79,7 +79,7 @@ nav.menu-mobile ul {
     z-index: 999;
 }
 
-nav.menu-mobile ul li{
+nav.menu-mobile ul li {
     padding: 10px 0;
     text-transform: uppercase;
 }
@@ -281,19 +281,19 @@ section.perfil-container .texto-perfil p {
 
 /* Seção de Vídeos*/
 
-section.videos{
+section.videos {
     padding: 50px 0;
 }
 
-section.videos .box-video{
+section.videos .box-video {
     position: relative;
     float: left;
     width: 33.3%;
     border: 5px solid white;
-    padding-top: calc(33.3% * 0.6);   
+    padding-top: calc(33.3% * 0.6);
 }
 
-section.videos iframe{
+section.videos iframe {
     position: absolute;
     left: 0;
     top: 0;
@@ -304,32 +304,75 @@ section.videos iframe{
 /****/
 
 /* Seção Tratamentos */
-section.tratamentos > h2{
+section.tratamentos>h2 {
     text-align: center;
     color: var(--dark-gray-2);
     font-size: var(--h2);
     padding: 70px 0;
 }
 
-section.tratamentos .tratamento-container{
+section.tratamentos .tratamento-container {
     float: left;
-    width: 33.3%;    
-} 
+    width: 33.3%;
+}
 
-.tratamento-single{
+.tratamento-single {
     padding: 20px;
 }
 
-.tratamento-single h2{
+.tratamento-single h2 {
     font-size: var(--h2);
     color: var(--brown);
     font-weight: normal;
 }
 
-.tratamento-single p{
+.tratamento-single p {
     padding: 15px 0;
     font-size: var(--p);
     color: var(--gray);
+}
+
+section.depoimentos>h2 {
+    text-align: center;
+    color: var(--dark-gray-2);
+    font-size: var(--h2);
+    padding: 70px 0;
+}
+
+section.depoimentos>.container {
+    padding: 10px 0;    
+    max-width: 400px;
+}
+
+section.depoimentos .depoimento-single {
+    text-align: center;
+    width: 100%;
+    padding: 0 2%;
+}
+
+.depoimento-single q {
+    font-size: var(--p);
+    color: var(--gray);
+}
+
+.depoimento-single .nome-depoimento {
+    padding: 19px 0;
+}
+
+.nome-depoimento img {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    border-radius: 16px;
+}
+
+.nome-depoimento span {
+    position: relative;
+    top: 4px;
+    font-size: 13px;
+    color: var(--gray);
+    display: inline-block;
+    vertical-align: top;
 }
 
 /****/
@@ -343,7 +386,7 @@ section.tratamentos .tratamento-container{
     }
 
     nav.menu-mobile {
-        display: block;        
+        display: block;
     }
 
 
@@ -370,7 +413,7 @@ section.tratamentos .tratamento-container{
         padding: 30px 2%;
     }
 
-    section.perfil-container .perfil-wraper{
+    section.perfil-container .perfil-wraper {
         padding-top: 0;
     }
 
@@ -399,16 +442,16 @@ section.tratamentos .tratamento-container{
         text-align: justify;
     }
 
-    section.videos{
+    section.videos {
         text-align: center;
     }
 
-    section.videos .box-video{
+    section.videos .box-video {
         display: inline-block;
         float: none;
         width: 70%;
         padding: calc(70% * 0.6);
-    }    
+    }
 
 }
 
@@ -418,10 +461,10 @@ section.tratamentos .tratamento-container{
         padding-top: 110%;
     }
 
-    section.videos .box-video{       
+    section.videos .box-video {
         width: 100%;
         padding: calc(100% * 0.3);
-    } 
+    }
 }
 
 @media sreen and (max-width: 480px) {
