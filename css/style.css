@@ -1,8 +1,9 @@
 :root {
     --white: #f5f5f5;
     --gray: #b4b4b4;
+    --gray-2: #98A5AD;
     --gray-darker: #4b4b4b;
-    --dark-gray: #576975;
+    --dark-gray: #576976; 
     --dark-gray-2: #688293;
     --brown: #737373;
     --h2: 24px;
@@ -90,7 +91,7 @@ header ul a {
     text-decoration: none;
 }
 
-/* ** */
+/****/
 
 /* Mosaico */
 
@@ -177,7 +178,7 @@ header ul a {
     background-repeat: no-repeat;
 }
 
-/**/
+/****/
 
 /* Seção Serviços */
 
@@ -332,6 +333,9 @@ section.tratamentos .tratamento-container {
     color: var(--gray);
 }
 
+/****/
+
+/* Seção Depoimentos */
 section.depoimentos>h2 {
     text-align: center;
     color: var(--dark-gray-2);
@@ -340,7 +344,7 @@ section.depoimentos>h2 {
 }
 
 section.depoimentos>.container {
-    padding: 10px 0;    
+    padding: 10px 0;
     max-width: 400px;
 }
 
@@ -377,7 +381,63 @@ section.depoimentos .depoimento-single {
 
 /****/
 
+/* Seção Midias Sociais */
+.instagram-chamada {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background: var(--gray-2);
+}
+
+.instagram-chamada p {
+    padding: 10px 0;
+    line-height: 23px;
+    color: var(--white);
+    font-size: 13px;
+}
+
+.mosaico-social {
+    float: left;
+    width: 100%;
+}
+
+.img-mosaico-single-social {
+    float: left;
+    width: calc(100% / 9);
+    padding-top: calc(100% / 9);
+    background-color: blueviolet;
+    border: 6px solid var(--white);
+}
+
+.facebook-chamada {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background: var(--dark-gray);
+}
+
+.facebook-chamada p {
+    padding: 10px 0;
+    line-height: 23px;
+    color: var(--white);
+    font-size: 13px;
+}
+
+/****/
+
 /* Media Queries */
+@media screen and (max-width: 1024px) {
+    .img-mosaico-single-social {
+        width: calc(100% / 6);
+        padding-top: calc(100% / 6);
+    }
+
+    .mosaico-social>div:nth-of-type(1n+7) {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 768px) {
 
@@ -451,6 +511,15 @@ section.depoimentos .depoimento-single {
         float: none;
         width: 70%;
         padding: calc(70% * 0.6);
+    }
+
+    .img-mosaico-single-social {
+        width: calc(100% / 3);
+        padding-top: calc(100% / 3);
+    }
+
+    .mosaico-social>div:nth-of-type(1n+4) {
+        display: none;
     }
 
 }
