@@ -237,7 +237,7 @@ section.perfil-container {
 }
 
 section.perfil-container .container {
-    max-width: 800px;
+    max-width: 1000px;
 }
 
 section.perfil-container .perfil-wraper {
@@ -249,8 +249,7 @@ section.perfil-container .perfil-wraper2 {
     position: absolute;
     left: 0;
     top: 0;
-    display: flex;
-    align-items: center;
+    display: flex;   
     width: 100%;
     height: 100%;
 }
@@ -264,7 +263,7 @@ section.perfil-container .img-perfil {
 
 section.perfil-container .texto-perfil {
     width: 60%;
-    padding: 0 30px;
+    padding: 20px 30px;
 }
 
 section.perfil-container .texto-perfil h2 {
@@ -275,6 +274,7 @@ section.perfil-container .texto-perfil h2 {
 section.perfil-container .texto-perfil p {
     color: var(--gray-darker);
     font-size: var(--p);
+    line-height: 25px;
     margin-top: 8px;
 }
 
@@ -405,6 +405,8 @@ section.depoimentos .depoimento-single {
 .img-mosaico-single-social {
     float: left;
     width: calc(100% / 9);
+    background-repeat: no-repeat;
+    background-size: 100%;
     padding-top: calc(100% / 9);
     background-color: blueviolet;
     border: 6px solid var(--white);
@@ -426,6 +428,97 @@ section.depoimentos .depoimento-single {
 }
 
 /****/
+
+/* Seção Contato */
+section.contato {
+    padding: 60px 0;
+}
+
+section.contato > h2 {
+    text-align: center;
+    color: var(--dark-gray-2);
+    font-size: 18px;
+}
+
+section.contato form{
+    width: 100%;
+    padding: 15px 0;
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+.form-wraper {
+    float: left;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.w100{
+    width: 100%;    
+}
+
+.w50{
+    width: 50%;
+}
+
+.form-wraper > span{
+    font-size: 15px;
+    color: var(--gray);    
+}
+
+.form-wraper input {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 9px;
+    border: 1px solid #dadadada;
+    margin-top: 8px;
+}
+
+.form-wraper textarea{
+    width: 100%;
+    padding: 15px;
+    height: 121px;
+    resize: none;
+    margin-top: 8px;
+    border: 1px solid #dadadada;
+}
+
+.form-wraper input[type=submit]{
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    border: 0;
+    color: var(--white);
+    background: var(--dark-gray-2);
+    cursor: pointer; 
+}
+
+footer{
+    padding: 40px 2%;
+    background: var(--dark-gray-2);
+    
+}
+
+footer .container{
+    max-width: 1100px;
+}
+
+footer .footer-block{
+    float: left;
+    width: 33.3%;
+    color: var(--white);
+}
+
+.footer-block h2{    
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.footer-block p{
+    margin-top: 8px;
+    font-size: 14px;
+}
 
 /* Media Queries */
 @media screen and (max-width: 1024px) {
@@ -522,6 +615,19 @@ section.depoimentos .depoimento-single {
         display: none;
     }
 
+    section.tratamentos .tratamento-container{
+        width: 100%;
+    }
+
+    footer{
+        text-align: center;        
+    }
+
+    footer .footer-block{
+        float: none;
+        width: 100%;  
+        margin: 30px 0; 
+    }
 }
 
 @media screen and (max-width: 580px) {
@@ -533,6 +639,10 @@ section.depoimentos .depoimento-single {
     section.videos .box-video {
         width: 100%;
         padding: calc(100% * 0.3);
+    }
+
+    .w50{
+        width: 100%;
     }
 }
 
